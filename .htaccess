@@ -78,3 +78,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
+
+# 2020-03-28 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# «Undefined index: media in plugins/system/t3/includes/core/minify.php on line 237»:
+# https://github.com/vegandthecity/joomla/issues/1
+php_value error_reporting 32759
