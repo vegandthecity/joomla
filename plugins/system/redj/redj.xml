@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>plg_system_redj</name>
+    <author>selfget.com</author>
+    <creationDate>January 2016</creationDate>
+    <copyright>Copyright (C) 2009 - 2016 selfget.com</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@selfget.com</authorEmail>
+    <authorUrl>http://www.selfget.com</authorUrl>
+    <version>1.7.10</version>
+    <description>PLG_SYS_REDJ_DESCRIPTION</description>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_redj.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_redj.sys.ini</language>
+        <language tag="it-IT">language/it-IT/it-IT.plg_system_redj.ini</language>
+        <language tag="it-IT">language/it-IT/it-IT.plg_system_redj.sys.ini</language>
+    </languages>
+
+  <files>
+    <filename plugin="redj">redj.php</filename>
+    <filename>index.html</filename>
+    <folder>fields</folder>
+  </files>
+
+  <config>
+    <fields name="params" addfieldpath="/plugins/system/redj/fields">
+      <fieldset name="basic">
+        <field name="customerror404page" type="radio" class="btn-group" default="0" label="PLG_SYS_REDJ_CUSTOM_ERROR_404_PAGE_LABEL" description="PLG_SYS_REDJ_CUSTOM_ERROR_404_PAGE_DESC">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="error404page" type="page404" default="" label="PLG_SYS_REDJ_ERROR_404_PAGE_LABEL" description="PLG_SYS_REDJ_ERROR_404_PAGE_DESC" />
+        <field name="trackerrors" type="radio" class="btn-group" default="0" label="PLG_SYS_REDJ_TRACK_ERRORS_LABEL" description="PLG_SYS_REDJ_TRACK_ERRORS_DESC">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="redirecterrors" type="radio" class="btn-group" default="0" label="PLG_SYS_REDJ_REDIRECT_ERRORS_LABEL" description="PLG_SYS_REDJ_REDIRECT_ERRORS_DESC">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="trackreferers" type="radio" class="btn-group" default="0" label="PLG_SYS_REDJ_TRACK_REFERERS_LABEL" description="PLG_SYS_REDJ_TRACK_REFERERS_DESC">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="excludereferers" type="textarea" rows="10" cols="30" default="" label="PLG_SYS_REDJ_EXCLUDE_REFERERS_LABEL" description="PLG_SYS_REDJ_EXCLUDE_REFERERS_DESC" />
+        <field name="redirectallerrors" type="radio" class="btn-group" default="0" label="PLG_SYS_REDJ_REDIRECT_ALL_ERRORS_LABEL" description="PLG_SYS_REDJ_REDIRECT_ALL_ERRORS_DESC">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="redirectallerrorsurl" type="text" default="" label="PLG_SYS_REDJ_REDIRECT_ALL_ERRORS_URL_LABEL" description="PLG_SYS_REDJ_REDIRECT_ALL_ERRORS_URL_DESC" />
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="shortcutextensions" type="text" default="" label="PLG_SYS_REDJ_SHORTCUT_EXTENSIONS_LABEL" description="PLG_SYS_REDJ_SHORTCUT_EXTENSIONS_DESC" />
+        <field name="basepath" type="text" default="" label="PLG_SYS_REDJ_BASEPATH_LABEL" description="PLG_SYS_REDJ_BASEPATH_DESC" />
+      </fieldset>
+    </fields>
+  </config>
+
+</extension>

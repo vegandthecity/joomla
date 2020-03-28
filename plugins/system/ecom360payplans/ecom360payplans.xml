@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>System - CMC Ecom360 Payplans</name>
+    <author>compojoom.com</author>
+    <creationDate>2019-01-13</creationDate>
+    <copyright>Copyright (C) 2012 - 2019 Yves Hoppe - compojoom.com. All rights reserved.</copyright>
+    <license>GNU/GPL http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorUrl>http://compojoom.com</authorUrl>
+    <version>4.1.2</version>
+    <description>PLG_SYSTEM_ECOM360_PAYPLANS_DESCRIPTION</description>
+    <files>
+        <file>ecom360payplans.xml</file>
+<file plugin="ecom360payplans">ecom360payplans.php</file>
+    </files>
+    <languages folder="administrator/language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_ecom360payplans.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_cmc/models/fields/">
+                <field type="input" name="store_id"
+                       label="PLG_SYSTEM_ECOM360_PAYPLANS_STORE_ID" description="PLG_SYSTEM_ECOM360_PAYPLANS_STORE_ID_DESC"
+                       default="42" required="true" />
+                <field type="cmclistid" name="list_id" label="PLG_SYSTEM_ECOM360_PAYPLANS_LIST_ID_LBL" description="PLG_SYSTEM_ECOM360_PAYPLANS_LIST_ID_DESC" required="true" />
+                <field type="input" name="store_name" label="PLG_SYSTEM_ECOM360_PAYPLANS_STORE_NAME_LBL" description="PLG_SYSTEM_ECOM360_PAYPLANS_STORE_NAME_DESC" required="true" default="PayPlans store" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

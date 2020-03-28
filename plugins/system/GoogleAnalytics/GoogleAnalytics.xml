@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>System - Google Analytics</name>
+    <author>Peter Bui</author>
+    <creationDate>19th April 2010</creationDate>
+    <authorEmail>peter@pbwebdev.com.au</authorEmail>
+    <authorUrl>http://pbwebdev.com</authorUrl>
+    <version>4.6.1</version>
+    <copyright>Copyright (c) 2015 PB Web Development. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <description>
+        <![CDATA[
+        <p style="text-align:left">
+            New and update rewrite of the popular Google Anaytics for Joomla FREE. Asynchronous code for Google Analytics is now
+            old and has been superseeded by Google's new "UNIVERSAL ANALYTICS".
+        </p>
+        <p style="text-align:left">
+            This plugin will allow you to choose between the two options of the new universal analytics code or the old
+            asynchronous version of the analytics code.
+        </p>
+
+        <h2 style="text-align:left">Upgrade to PRO</h2>
+
+        <p style="text-align:left">
+        You can also upgrade to <a href="http://nicheextensions.com/extensions/google-analytics" taget="_blank"><strong>Google Analytics PRO</strong></a> for more features and fine tuning of your analytics.
+        </p>
+
+        <h2 style="text-align:left">Documentation</h2>
+        <p style="text-align:left">
+            Read the documentation at: <a href="http://nicheextensions.com/documentation/3-google-analytics-for-joomla" target="_blank">http://nicheextensions.com/documentation/3-google-analytics-for-joomla</a> for more
+            information.
+        </p>
+
+        <h2 style="text-align:left">An Overview</h2>
+
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/58QMSW5bbCs" frameborder="0" allowfullscreen></iframe>
+
+        <h2 style="text-align:left">FAQs</h2>
+        <h3 style="text-align:left">Why doesn't Google say it can't detect my analytics code when clearly I can see it on the website?</h3>
+        <p style="text-align:left">
+        This usually happens when the information is sent to Google before the plugin was enabled and is being caches. Check back in 12 hours and make sure that the information still isn't coming through. Make sure you also check the ID for any spaces before or after the ID as this can also cause issues.</p>
+        <h3 style="text-align:left">How can I be certain that the information is being passed through?</h3>
+        <p style="text-align:left">
+        You can also use the Google analytics Real Time tracking to see if the data is coming in or not. If you see active users on the site with the real time data then the information is coming in to Google Analytics from your website.</p>
+        ]]>
+    </description>
+
+    <files>
+        <filename plugin="GoogleAnalytics">GoogleAnalytics.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="Basic">
+                <field name="type" type="radio"
+                       description="Choose the type of Google analytics code to use.
+                The new Universal analytics script or old asynchronous analytics. Please note you're Google
+                Analytics account needs to be set up for Universal if you wish to use the universal tracking
+                method. All new Google Analytics accounts typically default to Universal
+                Universal tracking currently doesn't support demographics or remarketing. If you want to take advantage
+                of these features you must us the Asynchronous version."
+                       label="Code type"
+                       default="universal">
+                    <option value="universal">Universal</option>
+                    <option value="asynchronous">Asynchronous</option>
+                </field>
+                <field name="code"
+                       type="text"
+                       default="UA-XXXXX-X"
+                       label="Google Analytics Web Property ID."
+                       description="e.g. UA-12345-67. This code can be found in your Google Analytics account.
+                Your site will not be tracked unless this code is entered."></field>
+                <field name="domain"
+                       type="text"
+                       default="auto"
+                       label="Domain"
+                       description="Please enter in the domain name that
+                you are tracking. e.g pbwebdev.com or brian.teeman.net. You can also leave this as 'auto' and allow Google to work it out.">
+                </field>
+                <field name="verify"
+                       type="text"
+                       default=""
+                       label="Google Webmaster Tools META Verification (optional)"
+                       description="Optional extra step to verify your site using META tag method in Google Web Master Tools">
+                </field>
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>

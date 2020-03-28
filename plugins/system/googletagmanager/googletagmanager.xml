@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system" method="upgrade">
+	<name>Google Tag Manager</name>
+	<author>James Murphy/Hugh Gideon-Murphy - Tools for Joomla Shop</author>
+	<creationDate>March 2015</creationDate>
+	<copyright>Copyright (C) 2015. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@toolsforjoomla.com</authorEmail>
+	<authorUrl>www.toolsforjoomla.com</authorUrl>
+	<version>1.0.1</version>
+	<description>PLG_GOOGLETAGMANAGER_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="googletagmanager">googletagmanager.php</filename>
+		<filename>index.html</filename>
+		<folder>js</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_googletagmanager.ini</language>
+		<language tag="en-GB">en-GB.plg_system_googletagmanager.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="container_id" type="text"
+					description="PLG_GOOGLETAGMANAGER_CONTAINER_ID_DESC"
+					label="PLG_GOOGLETAGMANAGER_CONTAINER_ID_LABEL">
+				</field>
+				<field name="add_datalayer" type="radio" default="on"
+					description="PLG_GOOGLETAGMANAGER_TRACK_DATALAYER_DESC"
+					label="PLG_GOOGLETAGMANAGER_TRACK_DATALAYER_LABEL">
+					<option value="on">Add</option>
+					<option value="off">Do not Add</option>
+				</field>
+				<field name="datalayer_name" type="text" default="dataLayer"
+					description="PLG_GOOGLETAGMANAGER_DATALAYER_NAME_DESC"
+					label="PLG_GOOGLETAGMANAGER_DATALAYER_NAME_LABEL">
+				</field>
+				<field name="track_userLogin" type="radio" default="on"
+					description="PLG_GOOGLETAGMANAGER_TRACK_USERLOGIN_DESC"
+					label="PLG_GOOGLETAGMANAGER_TRACK_USERLOGIN_LABEL">
+					<option value="on">Track</option>
+					<option value="off">Do not Track</option>
+				</field>
+				<field name="trackadmin" type="radio" default="off"
+					description="PLG_GOOGLETAGMANAGER_TRACK_ADMIN_DESC"
+					label="PLG_GOOGLETAGMANAGER_TRACK_ADMIN_LABEL">
+					<option value="on">Track</option>
+					<option value="off">Do not track</option>
+				</field>
+				<field name="add_scrolltracker" type="radio" default="off"
+					description="PLG_GOOGLETAGMANAGER_SCROLL_TRACKER_DESC"
+					label="PLG_GOOGLETAGMANAGER_SCROLL_TRACKER_LABEL">
+					<option value="on">Track</option>
+					<option value="off">Do not track</option>
+				</field>
+				<field name="scroll_tracker_content_id" type="text" default="page-item"
+					description="PLG_GOOGLETAGMANAGER_SCROLL_TRACKER_ID_DESC"
+					label="PLG_GOOGLETAGMANAGER_SCROLL_TRACKER_ID_LABEL">
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+	<updateservers>
+    <server type="extension" priority="1"
+        name="Google TagManager Updates"><![CDATA[http://toolsforjoomla.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=2]]></server>
+</updateservers>
+</extension>

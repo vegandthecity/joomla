@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>plg_content_podcastmanager</name>
+	<creationDate>2015-06-22</creationDate>
+	<author>Michael Babker</author>
+	<copyright>(C) 2011-2015 Michael Babker</copyright>
+	<authorEmail>mbabker@flbab.com</authorEmail>
+	<authorUrl>https://www.babdev.com</authorUrl>
+	<version>2.2.0</version>
+	<license>GNU/GPL Version 2 or later</license>
+	<description>PLG_CONTENT_PODCASTMANAGER_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="podcastmanager">podcastmanager.php</filename>
+		<filename>player.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<media destination="mediaelements" folder="mediaelements">
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+					name="loadJQuery"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_CONTENT_PODCASTMANAGER_FIELDSET_ADVANCED_LOADJQUERY_LABEL"
+					description="PLG_CONTENT_PODCASTMANAGER_FIELDSET_ADVANCED_LOADJQUERY_DESCRIPTION" >
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

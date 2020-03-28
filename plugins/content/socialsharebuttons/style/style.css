@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+.social-share-buttons-share{
+    display:block !important;        
+}
+
+.social-share-buttons-share-tw{
+    float:left;
+    margin:5px;
+}
+
+.social-share-buttons-share-fbsh{
+    float:left;
+    margin:5px;
+}
+.social-share-buttons-share-fbl{
+    float:left;
+    margin:5px;
+}
+.social-share-buttons-share-digg{
+    float:left;
+    margin:5px;
+}
+.social-share-buttons-share-su{
+    float:left;
+    margin:5px;
+}
+.social-share-buttons-share-red{
+	float:left;
+    margin:5px;
+}
+
+.social-share-buttons-share-pin{
+	float:left;
+    margin:5px;
+}
+
+.social-share-buttons-share-buf{
+	float:left;
+    margin:5px;
+}
+
+.social-share-buttons-share-tum{
+	float:left;
+    margin:5px;
+}
+.social-share-buttons-share-lin{
+    float:left;
+    margin:5px;
+}
+.social-share-buttons-share-buzz{
+    float:left;
+    margin:5px;
+}
+
+.social-share-buttons-share-gone{
+    float:left;
+    margin:5px;
+}
+
+.social-share-buttons-share-retweetme{
+    float:left;
+    margin:5px;
+}
+
+div.sharemebutton{ padding: 0px 0px 0px 0px; float: right; width: 56px; max-height: 195px; text-align: center;}
+td.sharemebutton{ padding-right: 0px; padding-top: 10px; padding-bottom:0px; margin-bottom:0px; margin-top: 0px; vertical-align:top; }
+td.space_right{padding: 0px 0px 0px 0px;}
+div.sharemebuttont{ padding: 0px 2px 0px 0px; float: right; }
+td.sharemebuttont{ padding-right: 0px; padding-top: 10px; padding-bottom:0px; margin-bottom:0px; margin-top: 0px; vertical-align:top; }
+td.space_right{ padding: 0px 0px 0px 0px;}
+div.sharemebuttonf{ padding: 2px 2px 0px 0px; float: right;}
+td.sharemebuttonf{ padding-right: 2px; padding-top: 10px; padding-bottom:0px; margin-bottom:0px; margin-top: 0px; vertical-align:top;}
+.fb_share_large .fb_sharecount_zero {
+    -moz-border-radius: 2px 2px 2px 2px;
+    background: url("http://static.fbshare.me/f_only.png") no-repeat scroll 20px 5px #3B5998;
+    display: block;
+    height: 47px;
+    margin-bottom: 2px;
+    width: 53px;
+}
+.social_share_buttons_credits {
+	width: 100%;
+	text-align: right;
+	clear:both;
+}
