@@ -1,0 +1,1 @@
+The [vegandthecity.ch](https://www.vegandthecity.ch) (Joomla 3) source code and issues tracker.
